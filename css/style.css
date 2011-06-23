@@ -126,8 +126,12 @@ body {
 
 .content {
 	float: right;
-	width: 50%;
+	width: 42.307692%;
 	background: #ffffff;
+	margin: 20px 0 0 0;
+	border-top: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	padding: 20px 40px;
 }
 
 /* --- HEADER --- */
@@ -140,7 +144,6 @@ body {
 	background: #FFFFFF;
 	background: rgba(255,255,255,1);
 	padding: 10px 40px 20px;
-	margin: 0 0 40px;
 }
 
 #header h1, #header h2, #header nav{
@@ -174,14 +177,9 @@ body {
 
 #header a:active, #header a:visited, #header a:link {
 	color: #0a8ec0;
-	-moz-transition: all 0.3s ease-out;  
-	     -o-transition: all 0.3s ease-out;  
-	-webkit-transition: all 0.3s ease-out;  
-	    -ms-transition: all 0.3s ease-out;  
-	        transition: all 0.3s ease-out;
 }
 
-#header a:hover, #header a .active {
+#header a:hover, #header a.active {
 	background: #e5b804;
 	color: #FFFFFF;
 }
@@ -191,12 +189,33 @@ body {
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 }
 
+.context a {
+	-moz-transition: all 0.2s ease-out;  
+	     -o-transition: all 0.2s ease-out;  
+	-webkit-transition: all 0.2s ease-out;  
+	    -ms-transition: all 0.2s ease-out;  
+	        transition: all 0.2s ease-out;
+}
+
+
 
 
 /* --- WORK --- */
 
+.workNav {
+	background: #ffffff;
+	padding: 0px 50px 20px;
+}
+
 .workNav h1 {
 	font-size: 2em;
+	border-top: 2px solid #898989;
+	padding: 10px 0 0 0;
+}
+
+.workNav ul {
+	border-top: 3px solid #454545;
+	padding-top: 20px;
 }
 
 .workNav ul li {
@@ -209,9 +228,18 @@ body {
 	background: rgba(0,0,0,0.8);
 	color: #ffffff;
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
-	padding: 5px 40px;
+	padding: 10px 10px;
+	font-size: 1.3em;
 }
 
+.workNav ul li a:hover {
+	background: #e5b804;
+}
+
+.workNav ul li a.active {
+	text-align: right;
+	background: rgba(0,0,0,0.4);
+}
 
 
 
