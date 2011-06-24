@@ -36,6 +36,7 @@ var jacobfierro = {};
 		
 		$.get('work/'+name+'.html', function(data){	
 			$('.context').after(data);
+			$('a.gallimg').fancybox();
 		});
 		
 	}
@@ -70,5 +71,4 @@ $(function(){
 	if(jacobfierro.getCurrentPageName() === 'work') {
 		jacobfierro.work_handler();
 	}
-	
 });

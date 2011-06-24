@@ -43,7 +43,7 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
 ul, ol { margin-left: 2em; }
-ol { list-style-type: decimal; }
+ol { list-style-type: none; }
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 small { font-size: 85%; }
 strong, th { font-weight: bold; }
@@ -93,7 +93,7 @@ html, body {
 body {
 	font-size: 100%;
 	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
-	color: #898989;
+	color: #454545;
 	-moz-background-size:100% auto;
 	-o-background-size:100% auto;
 	-webkit-background-size:100% auto;
@@ -185,17 +185,30 @@ body {
 	color: #FFFFFF;
 }
 
+
+
 /* --- MAIN STYLES --- */
  h1, h2, h3, h4, .sans {
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 }
 
-.context a {
+p {
+	font-size: 0.875em;
+	line-height: 1.8em;
+}
+
+.context a, .gallery ol li a {
 	-moz-transition: all 0.2s ease-out;  
 	     -o-transition: all 0.2s ease-out;  
 	-webkit-transition: all 0.2s ease-out;  
 	    -ms-transition: all 0.2s ease-out;  
 	        transition: all 0.2s ease-out;
+}
+
+.content header h1 {
+	font-size: 1.3em;
+	border-bottom: 1px solid #898989;
+	margin-bottom: 20px;
 }
 
 
@@ -225,14 +238,13 @@ body {
 
 .workNav ul li a {
 	display: block;
-	xbackground: #000000;
-	xbackground: rgba(0,0,0,0.8);
+	background: #ebebeb;
+	background: rgba(0,0,0,0.1);
 	color: #ffffff;
 	color: #0a8ec0;
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 	padding: 10px 10px;
 	font-size: 1.3em;
-	border-bottom: 1px solid #898989;
 }
 
 .workNav ul li a:hover {
@@ -246,18 +258,33 @@ body {
 	color: #FFFFFF;
 }
 
-.content header h1 {
-	font-size: 1.3em;
-	border-bottom: 1px solid #898989;
-	margin-bottom: 15px;
+
+.work-content section {
+	margin-bottom: 20px;
 }
 
-.thumb {
+.screenshot {
 	max-width: 100%;
 	border: 1px solid #898989;
+	margin-bottom: 20px;
 }
 
+.gallery ol {
+	margin: 0;
+}
 
+.gallery ol li {
+	float: left;
+	margin-right: 20px;
+}
+
+.gallery ol li.last {
+	margin-right: 0px;
+}
+
+.gallery ol li a:hover {
+	opacity: 0.7;
+}
 
 
 /* --- .group! --- */
