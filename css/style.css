@@ -100,8 +100,7 @@ body {
 	background-size:100% auto;
 	background-attachment:fixed;
 	background-color:#fff;
-	/*background-image: url(../img/verunkavlkova.jpg);*/
-	background-position:top;
+	background-position: top;
 }
 
 /* --- PAGE STRUCTURE & GRID --- */
@@ -110,13 +109,14 @@ body {
 	min-height: 100%;
  	background-attachment: fixed;
 	background-image: url(../img/overlay.gif);
+	padding-bottom: 25px; /* kludge */
 }
 
-#container {
-	margin: auto;
-	padding: 0;
+#wrap-inner {
+	margin: 0px auto;
+	padding: 0px;
 	max-width: 65em;
-	background-color: blue;
+	position: relative;
 }
 
 .context {
@@ -129,7 +129,7 @@ body {
 	float: right;
 	width: 42.307692%;
 	background: #ffffff;
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 0;
 	border-top: 3px solid #000000;
 	border-bottom: 3px solid #000000;
 	padding: 20px 40px;
@@ -195,6 +195,7 @@ body {
 p {
 	font-size: 0.875em;
 	line-height: 1.8em;
+	margin-bottom: 10px;
 }
 
 .context a, .gallery ol li a {
@@ -218,7 +219,9 @@ p {
 
 .workNav {
 	background: #ffffff;
-	padding: 0px 50px 20px;
+	padding: 0px 40px 20px;
+	max-width: 400px;
+	min-width: 320px;
 }
 
 .workNav h1 {
@@ -275,15 +278,39 @@ p {
 
 .gallery ol li {
 	float: left;
-	margin-right: 20px;
+	margin-right: 20px ;
+	margin-bottom: 5px;
+     -moz-box-shadow: 0px 0px 4px #b0b0b0; 
+  -webkit-box-shadow: 0px 0px 4px #b0b0b0; 
+          box-shadow: 0px 0px 4px #b0b0b0; 
+
 }
 
 .gallery ol li.last {
 	margin-right: 0px;
 }
 
+.gallery ol li a {
+	display: block;
+	width: 95px;
+	height: 95px;
+}
+
 .gallery ol li a:hover {
 	opacity: 0.7;
+}
+
+.gallery ol li a img {
+	
+}
+
+
+
+
+
+
+#footer {
+	clear: both;
 }
 
 
