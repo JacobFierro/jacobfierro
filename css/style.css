@@ -122,6 +122,7 @@ body {
 .context {
 	float: left;
 	width: 46.153846%;
+	border-bottom: 3px solid #000000;
 }
 
 .content {
@@ -140,7 +141,7 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	max-width: 400px;
-
+	min-width: 320px;
 	background: #FFFFFF;
 	background: rgba(255,255,255,1);
 	padding: 10px 40px 20px;
@@ -224,23 +225,37 @@ body {
 
 .workNav ul li a {
 	display: block;
-	background: #000000;
-	background: rgba(0,0,0,0.8);
+	xbackground: #000000;
+	xbackground: rgba(0,0,0,0.8);
 	color: #ffffff;
+	color: #0a8ec0;
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 	padding: 10px 10px;
 	font-size: 1.3em;
+	border-bottom: 1px solid #898989;
 }
 
 .workNav ul li a:hover {
 	background: #e5b804;
+	color: #ffffff;
 }
 
 .workNav ul li a.active {
 	text-align: right;
-	background: rgba(0,0,0,0.4);
+	background: #898989;
+	color: #FFFFFF;
 }
 
+.content header h1 {
+	font-size: 1.3em;
+	border-bottom: 1px solid #898989;
+	margin-bottom: 15px;
+}
+
+.thumb {
+	max-width: 100%;
+	border: 1px solid #898989;
+}
 
 
 
