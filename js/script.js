@@ -3,20 +3,12 @@ var jacobfierro = {};
 
 (function(context, undefined){
 	
-	function get_hash() {
-		var href = $(location).attr('href');
-		var retval = "";
-		if (href.search('#') === -1) {
-			retval = get_first_work_id();
-		} else {
-			var hash = href.substring(href.lastIndexOf('#')+1);
-			if (hash.length === 0) {
-				retval = get_first_work_id();
-			} else {
-				retval = hash;
-			}
-		}
-		return retval;
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+		return vars;
 	}
 	
 	function get_first_work_id() {
@@ -45,12 +37,15 @@ var jacobfierro = {};
 	** PUBLIC
 	*/
 	
-	context.work_handler = function() {
-		set_active_work(get_hash());
-		
-		$('.workNav').find('a').click(function(e){
-			set_active_work( $(this).attr('id') );
-		});
+	context.work_init = function() {
+		var query = getUrlVars()['v'];
+		var work ="";
+		if (query === undefined) {
+			work = get_first_work_id();
+		} else {
+			work = (query.length > 0) ? query : get_first_work_id();
+		}
+		set_active_work(work);
 	}
 	
 	context.getCurrentPageName = function() {
@@ -69,6 +64,6 @@ var jacobfierro = {};
 $(function(){
 	jacobfierro.highlight_main_nav();
 	if(jacobfierro.getCurrentPageName() === 'work') {
-		jacobfierro.work_handler();
+		jacobfierro.work_init();
 	}
 });
