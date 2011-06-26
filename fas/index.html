@@ -1,0 +1,236 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.6.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    
+    <div id="fas">
+		
+		
+		<div id="display">
+
+			<nav>
+				<ul>
+					<li id="control0"><span>Everything</span></li>
+					<li id="control1"><span>Last Name</span></li>
+					<li id="control2"><span>Condition <em>or</em> Specialty</span></li>
+					<li id="control3"><span>Surgical Services</span></li>
+				</ul>
+			</nav>
+
+			<section id="results">
+
+				<div id="view0" class="panel">
+					<section class="last-name">
+						<header>by Last Name</header>
+						<div class="feedback"></div>
+						<ul></ul>
+					</section>
+				
+					<section class="specialties">
+						<header>by Condition or Specialty</header>
+						<div class="feedback"></div>
+						<ul></ul>
+					</section>
+
+					<section class="services">
+						<header>Surgical Services</header>
+						<ul></ul>
+					</section>
+				</div><!-- #view0 -->
+				
+				<div id="view1" class="panel">
+					<section class="last-name full">
+						<header>by Last Name</header>
+						<div class="feedback"></div>
+						<div class="multi_col_holder"></div>
+						<div class="pag_controls"></div>
+					</section>
+				</div><!-- #view1 -->
+				
+				
+				<div id="view2" class="panel">
+					<section class="specialties full">
+						<header>by Condition or Specialty</header>
+						<div class="feedback"></div>
+						<div class="multi_col_holder"></div>
+						<div class="pag_controls"></div>
+					</section>
+				</div><!-- #view2 -->
+				
+				
+				<div id="view3" class="panel">
+					<section class="services full">
+						<header>Surgical Services</header>
+						<div class="multi_col_holder"></div>
+						<div class="pag_controls"></div>
+					</section>
+				</div><!-- #view3 -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<section id="card">
+					<section id="photo">
+						<img src="" id="headshot">
+						<a href="http://weillcornell.org" id="pops" target="_blank">View Full Profile</a>
+					</section>
+					
+					<section id="bio">
+						<div id="card-close">
+							<p>Mini-Profile</p>
+							<img src="images/card-close.png">
+						</div>
+						
+						<header id="name"></header>
+						
+						<section id="contact">
+							<table>
+								<tr class="main">
+									<td class="title">Phone:</td>
+									<td class="value" id="phone">(212) 746-6006</td>
+								</tr>
+								<tr>
+									<td class="title">Fax:</td>
+									<td class="value" id="fax">(212) 746-8753</td>
+								</tr>
+								<tr>
+									<td class="title">Address:</td>
+									<td class="value" id="address">525 E. 68th Street<br />Starr 8<br />New York, NY 10065</td>
+								</tr>
+							</table>
+						</section>
+						
+						
+						<section id="appointments"></section>
+						
+					</section><!-- #bio -->
+					
+					<section id="expertise">
+						<header>
+							Clinical Expertise
+						</header>
+						<div id="expertise_holder" class="multi_col_holder"></div>
+					</section>
+					
+				</section><!-- #card -->
+
+			</section><!-- #results -->
+
+		</div><!-- #display -->
+				
+				
+		<header id="search">
+			<h1>
+				Find a Surgeon
+			</h1>
+			<form>
+				<input type="text" id="input">
+			</form>
+		</header>
+				
+				
+    </div><!-- #fas -->
+    
+	<div id="blurb">
+		<h1>About This Work</h1>
+		<div class="col">
+		<h2>Client</h2>
+		<p>Weill Cornell Medical College : Department of Surgery</p>
+		
+		<h2>History</h2>
+		<p>Due to increased regulatory scrutiny for hospitals most of WCMC's vast network of web properties are still static HTML. However, there are some well sandboxed enterprise level web systems such as the Physician's Organization Profile System (POPS) which house vital information but are inaccessible in the context of the college's several independent patient care or educational websites (such as the college's Department of Surgery). Working closely with the POPS administrators I was able to devise a way in which a static json file could be regularly dumped out of POPS so that this Find a Surgeon tool could utilize that information to allow end users to search a large and complex set of data easily and intuitively.</p>
+		<p>As simple as this task may seem to the modern world, it was a huge step forward for the college and this tool was to eventually to be placed on every patient care website for the entire college network. Sadly, in my absence the project has yet to be implemented. </p>
+		</div>
+		
+		<div class="col">
+			<h2>Design Process</h2>
+			<p>This project began as a team exercise between Tim McEvoy (fellow designer) and I. The client's business goal was simple: "keep them on our site, get them to call and make an appointment as quickly as possible."</p>
+		</div>
+		
+   	</div>
+
+
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script--> 
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end concatenated and minified scripts-->
+  
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+  <!-- yui profiler and profileviewer - remove for production -->
+  <!--script src="js/profiling/yahoo-profiling.min.js"></script>
+  <script src="js/profiling/config.js"></script-->
+  <!-- end profiling code -->
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  
+</body>
+</html>

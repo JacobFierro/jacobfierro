@@ -1,0 +1,60 @@
+{
+	"services" : [
+		{
+			"title" : "Breast Surgery",
+			"path" : "services/breast-surgery/team.html"
+		},
+		{
+			"title" : "Burns, Critical Care and Trauma",
+			"path" : "services/burn-surgery/team.html"
+		},
+		{
+			"title" : "Colon and Rectal Surgery",
+			"path" : "services/colon-rectal/team.html"
+		},
+		{
+			"title" : "Dentistry, Oral and Maxillofacial Surgery",
+			"path" : "services/dentistry-oral-maxillofacial/team.html"
+		},
+		{
+			"title" : "Endocrine Surgery",
+			"path" : "services/endocrine/team.html"
+		},
+		{
+			"title" : "Gastroesophageal Motility Disorders Center",
+			"path" : "services/gi-motility-disorders/team.html"
+		},
+		{
+			"title" : "Gastrointestinal Metabolic Surgery",
+			"path" : "services/transplantation/team.html"
+		},
+		{
+			"title" : "Hepatobiliary Surgery and Liver Transplantation",
+			"path" : "services/livertransplantation/team.html"
+		},
+		{
+			"title" : "Kidney and Pancreas Transplantation",
+			"path" : "services/transplantation/team.html"
+		},
+		{
+			"title" : "Laparoscopy and Bariatric Surgery",
+			"path" : "services/lap-bariatric/team.html"
+		},
+		{
+			"title" : "Pediatric Surgery",
+			"path" : "services/ped-surgery/team.html"
+		},
+		{
+			"title" : "Plastic and Reconstructive Surgery",
+			"path" : "services/plastic-surgery/team.html"
+		},
+		{
+			"title" : "Surgical Oncology",
+			"path" : "services/surgical-oncology/team.html"
+		},
+		{
+			"title" : "Vascular and Endovascular Surgery",
+			"path" : "services/vascular-surgery/team.html"
+		}
+	]
+}
