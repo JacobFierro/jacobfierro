@@ -115,25 +115,27 @@ body {
 
 #wrap-inner {
 	margin: 0px auto;
-	padding: 0px;
-	max-width: 65em;
+	padding: 0px 20px;
+	max-width: 62.5em; /* 1000px*/
 	position: relative;
 }
 
 .context {
 	float: left;
-	width: 46.153846%;
+	max-width: 40%; /* 360px */
 	border-bottom: 3px solid #000000;
+	padding: 20px 4%;
+	background: #ffffff;
 }
 
 .content {
 	float: right;
-	width: 42.307692%;
+	max-width: 44%; /* 440px */
 	background: #ffffff;
 	margin: 10px 0 0 0;
 	border-top: 3px solid #000000;
 	border-bottom: 3px solid #000000;
-	padding: 20px 40px;
+	padding: 20px 4%;
 }
 
 /* --- HEADER --- */
@@ -141,11 +143,7 @@ body {
 #header {
 	text-transform: uppercase;
 	text-align: center;
-	max-width: 400px;
-	min-width: 320px;
-	background: #FFFFFF;
-	background: rgba(255,255,255,1);
-	padding: 10px 40px 20px;
+	max-width: 100%;
 }
 
 #header h1, #header h2, #header nav{
@@ -174,7 +172,6 @@ body {
 	font-size: 2.3em;
 	font-weight: bold;
 	padding: 8px 0;
-	xborder-bottom: 3px solid #000000;
 }
 
 #header a:active, #header a:visited, #header a:link {
@@ -220,15 +217,8 @@ p {
 
 .workNav {
 	background: #ffffff;
-	padding: 0px 40px 20px;
-	max-width: 400px;
-	min-width: 320px;
-}
-
-.workNav h1 {
-	font-size: 2em;
-	border-top: 2px solid #898989;
-	padding: 10px 0 0 0;
+	max-width: 100%;
+	margin: 20px 0 0 0;
 }
 
 .workNav ul {
