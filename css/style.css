@@ -101,7 +101,7 @@ body {
 	background-attachment:fixed;
 	background-color:#fff;
 	background-position: top;
-	background-image: url(../img/home.jpg);
+	xbackground-image: url(../img/home.jpg);
 }
 
 /* --- PAGE STRUCTURE & GRID --- */
@@ -122,15 +122,15 @@ body {
 
 .context {
 	float: left;
-	max-width: 40%; /* 360px */
+	width: 38%; /* 400px */
 	border-bottom: 3px solid #000000;
-	padding: 20px 4%;
+	padding: 20px 4%; /* 4% = 40px */
 	background: #ffffff;
 }
 
 .content {
 	float: right;
-	max-width: 44%; /* 440px */
+	width: 44%; /* 440px */
 	background: #ffffff;
 	margin: 10px 0 0 0;
 	border-top: 3px solid #000000;
@@ -210,6 +210,12 @@ p {
 	margin-bottom: 20px;
 }
 
+
+/* --- HOME --- */
+
+.home h1 {
+	font-size: 7em;
+} 
 
 
 
