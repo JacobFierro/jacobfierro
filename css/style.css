@@ -101,7 +101,7 @@ body {
 	background-attachment:fixed;
 	background-color:#fff;
 	background-position: top;
-	xbackground-image: url(../img/home.jpg);
+	background-image: url(../img/home.jpg);
 }
 
 /* --- PAGE STRUCTURE & GRID --- */
@@ -323,11 +323,26 @@ ul {
 	margin: 0 0 5px;
 }
 
+.contact label.error {
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+	padding: 5px 0 0 0;
+	font-size: 0.825em;
+	text-align: right;
+}
+
 .contact input, .contact textarea {
-	border: 1px solid #dcdcdc;
+	border: 1px solid #636363;
 	background: #ebebeb;
-	padding: 10px 1%;
-	width: 98%;
+	padding: 15px 2%;
+	width: 96%;
+}
+
+.contact input.error, .contact textarea.error {
+	background: #f8bcbc;
+}
+
+.contact input.valid {
+	background: #e2ffc2;
 }
 
 .contact input#submit {
@@ -348,6 +363,7 @@ ul {
 	color: #ffffff;
 	background: #E5B804;
 }
+
 
 
 

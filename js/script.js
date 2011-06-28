@@ -65,5 +65,11 @@ $(function(){
 	jacobfierro.highlight_main_nav();
 	if(jacobfierro.getCurrentPageName() === 'work') {
 		jacobfierro.work_init();
+	} else if (jacobfierro.getCurrentPageName()==='contact') {
+		$("#contactform").validate();
+		log('contact');
 	}
+	
+	
+	
 });
