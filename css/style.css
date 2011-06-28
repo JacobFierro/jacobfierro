@@ -75,8 +75,8 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {  color: #444; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-a, a:active, a:visited { color: #607890; text-decoration: none; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #0a8ec0; text-decoration: none; }
+a:hover { color: #000;}
 
 /*
     // ========================================== \\
@@ -165,11 +165,11 @@ body {
 }
 
 #header h2 {
-	font-size: 2.4em;
+	font-size: 2.3em;
 }
 
 #header nav {
-	font-size: 2.3em;
+	font-size: 2.4em;
 	font-weight: bold;
 	padding: 8px 0;
 }
@@ -196,6 +196,13 @@ p {
 	margin-bottom: 10px;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.content a:hover { color: #000; text-decoration: underline;}
+
 .context a, .gallery ol li a {
 	-moz-transition: all 0.2s ease-out;  
 	     -o-transition: all 0.2s ease-out;  
@@ -211,11 +218,12 @@ p {
 }
 
 
-/* --- HOME --- */
+/* --- HOME --- */ 
 
 .home h1 {
-	font-size: 7em;
-} 
+	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
+	font-size: 2.4em;
+}
 
 
 
@@ -294,7 +302,7 @@ p {
 }
 
 .gallery ol li a:hover {
-	opacity: 0.7;
+	opacity: 0.5;
 }
 
 .gallery ol li a img {
@@ -302,10 +310,49 @@ p {
 }
 
 
+/* --- CONTACT --- */
+
+.contact li {
+	margin: 0 0 19px;
+}
+
+.contact label {
+	display: block;
+	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
+	padding: 2px 3px;
+	margin: 0 0 5px;
+}
+
+.contact input, .contact textarea {
+	border: 1px solid #dcdcdc;
+	background: #ebebeb;
+	padding: 10px 1%;
+	width: 98%;
+}
+
+.contact input#submit {
+	color: #0a8ec0;
+	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
+	font-size: 1.2em;
+	background: #ffffff;
+	width: 100px;
+	
+	-moz-transition: all 0.2s ease-out;  
+	     -o-transition: all 0.2s ease-out;  
+	-webkit-transition: all 0.2s ease-out;  
+	    -ms-transition: all 0.2s ease-out;  
+	        transition: all 0.2s ease-out;
+}
+
+.contact input#submit:hover {
+	color: #ffffff;
+	background: #E5B804;
+}
 
 
 
 
+/* --- FOOTER --- */
 #footer {
 	clear: both;
 }
