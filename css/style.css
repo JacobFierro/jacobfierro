@@ -101,7 +101,7 @@ body {
 	background-attachment:fixed;
 	background-color:#fff;
 	background-position: top;
-	background-image: url(../img/home.jpg);
+	background-image: url(../img/home.png);
 }
 
 /* --- PAGE STRUCTURE & GRID --- */
@@ -342,7 +342,7 @@ ul {
 }
 
 .contact input.valid {
-	background: #e2ffc2;
+	background: #e5fde8;
 }
 
 .contact input#submit {
@@ -364,7 +364,14 @@ ul {
 	background: #E5B804;
 }
 
-
+p.success {
+	display: block;
+	text-align: center;
+	padding: 30px 0;
+	background: #898989;
+	color: #ffffff;
+	font-size: 1.2em;
+}
 
 
 
