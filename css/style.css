@@ -101,7 +101,7 @@ body {
 	background-attachment:fixed;
 	background-color:#fff;
 	background-position: top;
-	background-image: url(../img/home.png);
+	background-image: url(../img/home.jpg);
 }
 
 /* --- PAGE STRUCTURE & GRID --- */
@@ -211,10 +211,14 @@ ul {
 	        transition: all 0.2s ease-out;
 }
 
+.content section {
+	margin-bottom: 25px;
+}
+
 .content header h1 {
 	font-size: 1.3em;
 	border-bottom: 1px solid #898989;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 
@@ -339,10 +343,6 @@ ul {
 
 .contact input.error, .contact textarea.error {
 	background: #f8bcbc;
-}
-
-.contact input.valid {
-	background: #e5fde8;
 }
 
 .contact input#submit {
