@@ -335,21 +335,29 @@ ul {
 }
 
 .contact input, .contact textarea {
-	border: 1px solid #636363;
+	border: 1px solid #ebebeb;
 	background: #ebebeb;
 	padding: 15px 2%;
 	width: 96%;
+	color: #0A8EC0;
+	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
+	font-size: 0.875em;
+}
+
+.contact input:focus, .contact textarea:focus {
+	background: #FFFFFF;
+	border: 1px solid #ebebeb;
 }
 
 .contact input.error, .contact textarea.error {
-	background: #f8bcbc;
+	background: #ffec92;
 }
 
 .contact input#submit {
-	color: #0a8ec0;
+	color: #ffffff;
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 	font-size: 1.2em;
-	background: #ffffff;
+	background: #0a8ec0;
 	width: 100px;
 	
 	-moz-transition: all 0.2s ease-out;  
@@ -370,7 +378,7 @@ p.success {
 	padding: 30px 0;
 	background: #898989;
 	color: #ffffff;
-	font-size: 1.2em;
+	font-size: 0.875em;
 }
 
 
