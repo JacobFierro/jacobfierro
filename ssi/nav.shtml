@@ -1,8 +1,0 @@
-<header id="header" class="group">
-	<h1><a href="index.html">Jacob Fierro</a></h1>
-	<h2>web designer <span class="amp">&amp;</span> developer</h2>
-	<nav>
-		<a href="work.html" class="work">selected work</a> / 
-		<a href="contact.html" class="contact">contact</a>
-	</nav>
-</header>
