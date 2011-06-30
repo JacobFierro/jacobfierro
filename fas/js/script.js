@@ -1127,7 +1127,7 @@ var SRCH = typeof(SRCH) === "undefined" ? {} : SRCH;
 			results : '#results',
 			card : '#card',
 			card_close : '#card-close',
-			base_url : "http://localhost/jacobfierro/fas/"
+			base_url : "http://jacobfierro.com/fas/"
 		};
 		
 		
