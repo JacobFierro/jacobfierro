@@ -456,7 +456,8 @@ var SRCH = typeof(SRCH) === "undefined" ? {} : SRCH;
 		var self = ListPrinter(settings);
 		
 		self.template = function(data) {
-			return '<li><a href="'+ context.settings.base_url + data.path + '">' + self.get_matched_string(data.title) + '</a></li>';
+			//return '<li><a href="'+ context.settings.base_url + data.path + '">' + self.get_matched_string(data.title) + '</a></li>';
+			return '<li><a href="http://www.cornellsurgery.org/patients/'+ data.path + '" target="_blank">' + self.get_matched_string(data.title) + '</a></li>'; //hard coded domain for dev version only
 		}
 		
 		return self;
