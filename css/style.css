@@ -94,6 +94,7 @@ body {
 	font-size: 100%;
 	font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;
 	color: #454545;
+	/*
 	-moz-background-size:100% auto;
 	-o-background-size:100% auto;
 	-webkit-background-size:100% auto;
@@ -102,6 +103,7 @@ body {
 	background-color:#fff;
 	background-position: top;
 	background-image: url(../img/home.jpg);
+	*/
 }
 
 /* --- PAGE STRUCTURE & GRID --- */

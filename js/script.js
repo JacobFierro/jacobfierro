@@ -79,8 +79,11 @@ var jacobfierro = {};
 })(jacobfierro);
 
 
-$(function(){
+$(document).ready(function(){
+	$.backstretch("img/home.jpg", {speed: 200});
+	
 	jacobfierro.highlight_main_nav();
+	
 	if(jacobfierro.getCurrentPageName() === 'work') {
 		jacobfierro.work_init();
 	} else if (jacobfierro.getCurrentPageName()==='contact') {
@@ -93,11 +96,6 @@ $(function(){
 			invalidHandler: function(form, validator) {
 				log('invalid');
 			}
-		});
-		
-		
+		});	
 	}
-	
-	
-	
 });
