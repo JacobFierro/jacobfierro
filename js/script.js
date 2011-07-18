@@ -27,7 +27,7 @@ var jacobfierro = {};
 		$('.content').remove();
 		
 		$.get('work/'+name+'.html', function(data){	
-			$('.context').after(data);
+			$('.context').after( innerShiv(data, false) );
 			$('a.gallimg').fancybox();
 		});
 		
