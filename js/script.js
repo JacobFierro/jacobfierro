@@ -1,4 +1,4 @@
-var jacobfierro = {};
+var jf = {};
 
 
 (function(context, undefined){
@@ -50,11 +50,18 @@ var jacobfierro = {};
 	
 	context.getCurrentPageName = function() {
 		var full = $(location).attr('href');
-		return full.substring(full.lastIndexOf('/')+1, full.lastIndexOf('.'));
+		//log(full.lastIndexOf('.'));
+		
+		if (full.lastIndexOf('.') === -1) {
+			log('no file name');
+			return full.substring( (full.lastIndexOf('/') +1) );
+		} else {
+			log('file name');
+			return full.substring( (full.lastIndexOf('/') +1), full.lastIndexOf('.') )
+		}
 	}
 	
-	context.highlight_main_nav = function() {
-		var current = this.getCurrentPageName();
+	context.highlight_main_nav = function(current) {
 		$('#header').find('.'+current).addClass('active');
 	}
 	
@@ -76,21 +83,27 @@ var jacobfierro = {};
 		
 	}
 	
-})(jacobfierro);
+})(jf);
 
 
 $(document).ready(function(){
-	$.backstretch("img/home.jpg", {speed: 200});
+	//$.backstretch("img/home.jpg", {speed: 200});
 	
-	jacobfierro.highlight_main_nav();
+	var current = (jf.getCurrentPageName() === "") ? "index" : jf.getCurrentPageName();
 	
-	if(jacobfierro.getCurrentPageName() === 'work') {
-		jacobfierro.work_init();
-	} else if (jacobfierro.getCurrentPageName()==='contact') {
+	jf.highlight_main_nav(current);
+	
+	
+	if (current === 'index') {
+		$.backstretch("img/home.jpg", {speed: 200});
+	} else if (jf.getCurrentPageName() === 'work') {
+		$.backstretch("img/oorby.jpg", {speed: 200});
+		jf.work_init();
+		} else if (jf.getCurrentPageName() === 'contact') {
 		$("#contactform").validate({
 			submitHandler: function(form) {
 				$(form).ajaxSubmit({
-					success: jacobfierro.form_success
+					success: jf.form_success
 				});
 			},
 			invalidHandler: function(form, validator) {
@@ -98,4 +111,5 @@ $(document).ready(function(){
 			}
 		});	
 	}
+	
 });
