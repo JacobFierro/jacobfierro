@@ -16,7 +16,7 @@ var jf = {};
 	}
 	
 	function set_background_image(path) {
-		$('body').css({ 'background-image' : 'url(' + path + ')' });
+		$.backstretch(path, {speed: 150});
 	}
 	
 	function set_active_work(name) {
@@ -97,19 +97,18 @@ $(document).ready(function(){
 	if (current === 'index') {
 		$.backstretch("img/home.jpg", {speed: 200});
 	} else if (jf.getCurrentPageName() === 'work') {
-		$.backstretch("img/oorby.jpg", {speed: 200});
 		jf.work_init();
-		} else if (jf.getCurrentPageName() === 'contact') {
-		$("#contactform").validate({
-			submitHandler: function(form) {
-				$(form).ajaxSubmit({
-					success: jf.form_success
-				});
-			},
-			invalidHandler: function(form, validator) {
-				log('invalid');
-			}
-		});	
-	}
+	} else if (jf.getCurrentPageName() === 'contact') {
+	$("#contactform").validate({
+		submitHandler: function(form) {
+			$(form).ajaxSubmit({
+				success: jf.form_success
+			});
+		},
+		invalidHandler: function(form, validator) {
+			log('invalid');
+		}
+	});	
+}
 	
 });
