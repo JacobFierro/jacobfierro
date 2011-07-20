@@ -75,8 +75,8 @@ $(document).ready(function(){
 	jf.highlight_nav(current);
 	
 	if (current === 'index') {
-		$.backstretch("img/home.jpg", {speed: 200});
 		$('#home').addClass('active');
+		$.backstretch("img/home.jpg", {speed: 200});
 	} else if (jf.getCurrentPageName() === 'work') {
 		jf.work_init();
 	} else if (jf.getCurrentPageName() === 'contact') {
