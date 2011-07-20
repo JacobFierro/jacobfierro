@@ -139,7 +139,7 @@ body {
 	max-width: 100%;
 }
 
-#header h1, #header h2, #header nav{
+#header h1, #header h2, #header nav.primary_nav{
 	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
 	line-height: 1em;
 }
@@ -161,20 +161,63 @@ body {
 	font-size: 2.3em;
 }
 
-#header nav {
+/* --- PRIMARY NAV --- */
+
+.primary_nav {
 	font-size: 2.4em;
 	font-weight: bold;
 	padding: 8px 0;
 }
 
-#header a:active, #header a:visited, #header a:link {
+.primary_nav a:active, .primary_nav a:visited, .primary_nav a:link {
 	color: #0a8ec0;
 }
 
-#header a:hover, #header a.active {
+.primary_nav a:hover, .primary_nav a.active {
 	background: #e5b804;
 	color: #FFFFFF;
 }
+
+/* --- SECONDARY NAV --- */
+
+.secondary_nav {
+	background: #ffffff;
+	max-width: 100%;
+	margin: 20px 0 0 0;
+	text-align: left;
+}
+
+.secondary_nav ul {
+	border-top: 3px solid #454545;
+	padding-top: 20px;
+}
+
+.secondary_nav ul li {
+	margin-bottom: 5px;
+}
+
+.secondary_nav ul li a {
+	display: block;
+	background: #ebebeb;
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
+	color: #0a8ec0;
+	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
+	padding: 10px 10px;
+	font-size: 1.3em;
+}
+
+.secondary_nav ul li a:hover {
+	background: #e5b804;
+	color: #ffffff;
+}
+
+.secondary_nav ul li a.active {
+	text-align: right;
+	background: #898989;
+	color: #FFFFFF;
+}
+
 
 
 
@@ -225,43 +268,6 @@ ul {
 
 
 /* --- WORK --- */
-
-.workNav {
-	background: #ffffff;
-	max-width: 100%;
-	margin: 20px 0 0 0;
-}
-
-.workNav ul {
-	border-top: 3px solid #454545;
-	padding-top: 20px;
-}
-
-.workNav ul li {
-	margin-bottom: 5px;
-}
-
-.workNav ul li a {
-	display: block;
-	background: #ebebeb;
-	background: rgba(0,0,0,0.1);
-	color: #ffffff;
-	color: #0a8ec0;
-	font-family: "refrigerator-deluxe-1","refrigerator-deluxe-2",sans-serif;
-	padding: 10px 10px;
-	font-size: 1.3em;
-}
-
-.workNav ul li a:hover {
-	background: #e5b804;
-	color: #ffffff;
-}
-
-.workNav ul li a.active {
-	text-align: right;
-	background: #898989;
-	color: #FFFFFF;
-}
 
 
 .work-content section {

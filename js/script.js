@@ -12,7 +12,7 @@ var jf = {};
 	}
 	
 	function get_first_work_id() {
-		return $('.workNav').find('a:first').attr('id');
+		return $('.secondary_nav').find('a:eq(1)').attr('id');
 	}
 	
 	function set_background_image(path) {
@@ -21,7 +21,7 @@ var jf = {};
 	
 	function set_active_work(name) {
 		set_background_image('img/' + name + '.jpg');
-		$('.workNav').find('a').removeClass('active');
+		$('.secondary_nav').find('a').removeClass('active');
 		$('#'+name).addClass('active');
 		
 		$('.content').remove();
@@ -50,55 +50,38 @@ var jf = {};
 	
 	context.getCurrentPageName = function() {
 		var full = $(location).attr('href');
-		//log(full.lastIndexOf('.'));
-		
 		if (full.lastIndexOf('.') === -1) {
-			log('no file name');
 			return full.substring( (full.lastIndexOf('/') +1) );
 		} else {
-			log('file name');
 			return full.substring( (full.lastIndexOf('/') +1), full.lastIndexOf('.') )
 		}
 	}
 	
-	context.highlight_main_nav = function(current) {
-		$('#header').find('.'+current).addClass('active');
+	context.highlight_nav = function(current) {
+		$('.primary_nav').find('.'+current).addClass('active');
 	}
 	
 	context.form_success = function(response, status, xhr, $form) {
-		// for normal html responses, the first argument to the success callback 
-	    // is the XMLHttpRequest object's responseText property 
-
-	    // if the ajaxSubmit method was passed an Options Object with the dataType 
-	    // property set to 'xml' then the first argument to the success callback 
-	    // is the XMLHttpRequest object's responseXML property 
-
-	    // if the ajaxSubmit method was passed an Options Object with the dataType 
-	    // property set to 'json' then the first argument to the success callback 
-	    // is the json data object returned by the server
-	
-	 
 		$('#response').hide().html(response).fadeIn();
 	    $('#contactform').slideUp();
-		
 	}
 	
 })(jf);
 
 
 $(document).ready(function(){
-	//$.backstretch("img/home.jpg", {speed: 200});
-	
 	var current = (jf.getCurrentPageName() === "") ? "index" : jf.getCurrentPageName();
 	
-	jf.highlight_main_nav(current);
-	
+	jf.highlight_nav(current);
 	
 	if (current === 'index') {
 		$.backstretch("img/home.jpg", {speed: 200});
+		$('#home').addClass('active');
 	} else if (jf.getCurrentPageName() === 'work') {
 		jf.work_init();
 	} else if (jf.getCurrentPageName() === 'contact') {
+	
+	
 	$("#contactform").validate({
 		submitHandler: function(form) {
 			$(form).ajaxSubmit({
