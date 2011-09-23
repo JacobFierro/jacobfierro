@@ -7,8 +7,7 @@
 var SRCH = typeof(SRCH) === "undefined" ? {} : SRCH;
 (function(context){	
 	var settings = {};
-
-	//new and needed
+	
 	var num_json_loaded = 0,
 		json = {},
 		views = {},
